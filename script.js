@@ -33,6 +33,7 @@ let wordIndex = 0;
 // 開始時刻
 let startTime = Date.now();
 
+const init_msgElement = document.getElementById('init_msg');
 const quoteElement = document.getElementById('quote');
 const quote_jaElement = document.getElementById('quote_ja');
 const messageElement = document.getElementById('message');
@@ -43,6 +44,7 @@ document.getElementById('start').addEventListener('click', ()=> {
     const quote = quotes[quoteIndex];
     const quote_ja = quotes_ja[quoteIndex];
     quote_jaElement.innerText = quote_ja;
+    init_msgElement.innerText = '';
 
     words = quote.split(' ');
     wordIndex = 0;

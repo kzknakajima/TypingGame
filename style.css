@@ -1,10 +1,16 @@
 /* style.css の中身 */
 .highlight {
     background-color: yellow;
-}
-  
+}  
 .error {
     background-color: lightcoral;
     border: red;
 }
-  
+
+h1{text-align: center}
+p{
+    font-size: 20px;
+    text-align: center
+}
+img{margin: 10px;}
+#init_msg{font-size: 22px;}
